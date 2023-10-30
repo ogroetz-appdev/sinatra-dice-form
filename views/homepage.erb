@@ -1,15 +1,17 @@
-<form action="https://wikipedia.org">
+<!--<form action="https://wikipedia.org">
   <button>Click Me</button>
-</form>
+</form>-->
 
 <!--a form is just aother variety of heperlink
 -->
+<h1>Dice Roll</h1>
 
-
-<form action="">
-  <label for="" ></label>
-  <input type="text" id="" name="" >
-  <button>Submit</button>
+<form action="/process_results">
+  <label for="dice_count" >Number of dice to roll?</label>
+  <input type="text" id="dice_count" name="dice_count" >
+  <label for="sides" >How many sides per die?</label>
+  <input type="text" id="sides" name="sides" >
+  <button>Roll!</button>
 </form>
 <!--the name field is the name of the param-->
 <!--the job of a form is to create a query string-->

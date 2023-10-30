@@ -2,6 +2,9 @@
 
 <a href="">Roll Again</a> | <a href="/">Go Back Home</a>
 
+
 <ol>
-  <li><em>Result: </em></li>
+  <% @num_dice.times do %>
+  <li><em>Result: <strong><%= rand(1..@num_sides) %></strong></em></li>
+  <% end %>
 </ol>
