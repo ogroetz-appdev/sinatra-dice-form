@@ -7,3 +7,8 @@ get("/") do
   <p>Define some routes in app.rb</p>
   "
 end
+
+get("/process_results") do
+  @num_dice = params.fetch("").to_i
+  @num_sides = params.fetch("").to_i
+end
